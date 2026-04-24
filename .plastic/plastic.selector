@@ -1,0 +1,3 @@
+repository "CPS382TermProject/CPS382TermProject@2475781365622@cloud"
+  path "/"
+    smartbranch "/main"
