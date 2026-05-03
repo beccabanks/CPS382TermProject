@@ -19989,7 +19989,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 67b668dac4bfcb14e83124b9616131f8, type: 2}
+  - {fileID: -8693670414629038345, guid: d5d7e5a04bbfd294ab3b2555c37c336f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24938,7 +24938,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 46c30fed6d1437740a97be7b1b87ebd0, type: 2}
+  - {fileID: 8971141368763241655, guid: 628240088f45c044e8b60a4812d3b401, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39562,6 +39562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4699530401569365125}
     m_Modifications:
+    - target: {fileID: 170673290183055233, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -7791486788655378091, guid: 3012d011a43e8f345a4b91284eebce08, type: 3}
     - target: {fileID: 1293029876712600392, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.815073
@@ -39607,7 +39611,8 @@ PrefabInstance:
       value: PlayerCapsule
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1872937917931586718, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}

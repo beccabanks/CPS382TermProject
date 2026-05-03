@@ -104,11 +104,7 @@ public class GameManager : MonoBehaviour {
 		if (gameOverText)
 			gameOverText.text = "CONGRATULATIONS!";
 	}
-	public void PlayerDied() {
-		GameOver();
-		if (gameOverText)
-			gameOverText.text = "YOU DIED!";
-	}
+
 	public void GameOver() {
 		Time.timeScale = 0;
 		// game is over
@@ -139,27 +135,7 @@ public class GameManager : MonoBehaviour {
 		SceneManager.LoadScene(nextLevelSceneName);
 	}
 	// public function that can be called to update the score or time
-	public void targetHit (int scoreAmount, float timeAmount)
-	{
-		// increase the score by the scoreAmount and update the text UI
-		score += scoreAmount;
-		if (score > scoreToWin) {
-			BeatLevel();
-		}
-		if (mainScoreDisplay)
-			mainScoreDisplay.text = score.ToString ();
-		
-		// increase the time by the timeAmount
-		currentTime += timeAmount;
-		
-		// don't let it go negative
-		if (currentTime < 0)
-			currentTime = 0.0f;
-
-		// update the text UI
-		if(mainTimerDisplay)
-			mainTimerDisplay.text = currentTime.ToString ("0.00");
-	}
+	
 
 	// public function that can be called to restart the game
 	public void RestartGame ()
