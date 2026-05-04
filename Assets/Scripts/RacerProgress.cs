@@ -10,6 +10,8 @@ public class RacerProgress : MonoBehaviour
 
     public float distanceToNext;
 
+    public bool finished = false;
+
     void Update()
     {
         if (waypoints.Length == 0) return;
@@ -18,7 +20,7 @@ public class RacerProgress : MonoBehaviour
         distanceToNext = Vector3.Distance(transform.position, wp.position);
 
         // Waypoint reached
-        if (distanceToNext < 5f)
+        if (distanceToNext < 15f)
         {
             currentWaypoint++;
 
@@ -26,6 +28,11 @@ public class RacerProgress : MonoBehaviour
             {
                 currentWaypoint = 0;
                 currentLap++;
+
+                if (currentLap >= totalLaps)
+                {
+                    finished = true;
+                }
             }
         }
     }
@@ -38,7 +45,7 @@ public class RacerProgress : MonoBehaviour
 
     public bool HasFinished()
     {
-        return currentLap >= totalLaps;
+        return finished;
     }
 }
 

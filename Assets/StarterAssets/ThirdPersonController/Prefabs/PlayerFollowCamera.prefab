@@ -91,15 +91,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damping: {x: 0.1, y: 0.25, z: 0.3}
   ShoulderOffset: {x: 2, y: 0, z: 0}
-  VerticalArmLength: 6
-  CameraSide: 0.691
+  VerticalArmLength: 4
+  CameraSide: 0.507
   CameraDistance: 4
   AvoidObstacles:
     Enabled: 1
     CollisionFilter:
       serializedVersion: 2
       m_Bits: 1
-    IgnoreTag: Player
+    IgnoreTag: Untagged
     CameraRadius: 0.375
     DampingIntoCollision: 0
     DampingFromCollision: 0
